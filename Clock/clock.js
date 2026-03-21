@@ -25,13 +25,13 @@ function makeDraggable(element) {
 
 
 // ================= CLOCK LOGIC =================
-function initClock(windowEl) {
-    const btn12 = windowEl.querySelector("#btn-12");
-    const btn24 = windowEl.querySelector("#btn-24");
-    const time = windowEl.querySelector("#time");
-    const ampm = windowEl.querySelector("#abbreviations");
-    const date = windowEl.querySelector("#date");
-    const day = windowEl.querySelector("#day");
+function initClock(clock_windowEl) {
+    const btn12 = clock_windowEl.querySelector("#btn-12");
+    const btn24 = clock_windowEl.querySelector("#btn-24");
+    const time = clock_windowEl.querySelector("#time");
+    const ampm = clock_windowEl.querySelector("#abbreviations");
+    const date = clock_windowEl.querySelector("#date");
+    const day = clock_windowEl.querySelector("#day");
 
     let is12Hour = true;
 
