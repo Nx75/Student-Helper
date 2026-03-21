@@ -1,3 +1,14 @@
+.todo-window {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+
+  width: 500px;
+  background: var(--surface);
+  border: var(--border);
+  box-shadow: 6px 6px 0 #000;
+}
+
 #todo-container {
     border: 3px solid black;
     padding: 20px;
