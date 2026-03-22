@@ -45,3 +45,26 @@ todo.addEventListener("click", async () => {
     makeDraggable(todo_windowEl);
     initTodo(todo_windowEl);
 });
+
+const pomodoro = document.getElementById("pomodoro-icon");
+let pomodoroTemplateCache = null;
+
+pomodoro.addEventListener("click", async () => {
+    if (!pomodoroTemplateCache) {
+        const pomodoro_response = await fetch("Pomodoro/pomodoro.html");
+        const pomodoro_html = await pomodoro_response.text();
+
+        const pomodoro_temp = document.createElement("div");
+        pomodoro_temp.innerHTML = pomodoro_html;
+
+        pomodoroTemplateCache = pomodoro_temp.querySelector("#pomodoro-template");
+    }
+
+    const pomodoro_clone = pomodoroTemplateCache.content.cloneNode(true);
+    const pomodoro_windowEl = pomodoro_clone.querySelector("#desktop-window");
+
+    desktop.appendChild(pomodoro_windowEl);
+
+    makeDraggable(pomodoro_windowEl);
+    initPomodoro(pomodoro_windowEl);
+}); 
