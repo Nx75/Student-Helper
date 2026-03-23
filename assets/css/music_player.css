@@ -1,0 +1,166 @@
+.audio-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 340px;
+    max-height: 100vh;
+
+    background: #fff;
+    border: 3px solid #000;
+    box-shadow: 6px 6px 0 #000;
+    overflow: hidden;
+}
+
+.audio-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    word-break: break-word;
+    padding: 6px;
+    border-bottom: 3px solid black;
+}
+
+
+.audio-title {
+    text-align: center;
+    padding: 10px;
+
+    font-weight: bold;
+    border: 3px solid #000;
+    word-break: break-word;
+}
+
+
+.audio-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    border: 3px solid #000;
+}
+
+.audio-row input[type="file"] {
+    width: 100%;
+    padding: 5px;
+
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+#songUpload {
+    display: none;
+}
+
+.upload-btn {
+    flex: 1;
+    text-align: center;
+
+    padding: 10px;
+    border: 2px solid #000;
+
+    background: #fff;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+
+    transition: 0.1s;
+}
+
+.upload-btn:hover {
+    background: #f0f0f0;
+}
+
+.upload-btn:active {
+    transform: translate(2px, 2px);
+}
+
+audio {
+    width: 100%;
+    outline: none;
+}
+
+.audio-progress {
+    padding: 10px;
+    border: 3px solid #000;
+}
+
+#progressBar {
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.audio-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.audio-controls button {
+    flex: 1;
+    padding: 10px;
+
+    border: 2px solid #000;
+    background: #fff;
+    cursor: pointer;
+
+    transition: 0.1s;
+}
+
+.audio-controls button:hover {
+    background: #f0f0f0;
+}
+
+.audio-controls button:active {
+    transform: translate(2px, 2px);
+}
+
+.audio-controls button i {
+    pointer-events: none;
+    font-size: 16px;
+}
+
+.audio-playlist {
+    max-height: 150px;
+    overflow-y: auto;
+
+    padding: 10px;
+    border: 2px solid #000;
+}
+
+.track {
+    padding: 8px;
+    margin-bottom: 5px;
+
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.track:hover {
+    background: #eee;
+}
+
+.track.active {
+    background: #ddd;
+    font-weight: bold;
+}
+
+.audio-container::-webkit-scrollbar,
+.audio-playlist::-webkit-scrollbar {
+    width: 6px;
+}
+
+.audio-container::-webkit-scrollbar-thumb,
+.audio-playlist::-webkit-scrollbar-thumb {
+    background: #000;
+}
