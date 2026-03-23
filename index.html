@@ -6,25 +6,57 @@
     <title>Nx75</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+<!--CSS-->
 <link rel="stylesheet" href="Clock/clock.css">
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="TODO/todo.css">
 <link rel="stylesheet" href="Pomodoro/pomodoro.css">
 <link rel="stylesheet" href="assets/css/music_player.css">
+<link rel="stylesheet" href="assets/css/weather.css">
 
 <body>
 
+    <div class="nav-bar">
+        <div class="clock">
+            00:00:00
+        </div>
+    </div>
+
     <!-- DESKTOP -->
     <div id="desktop">
-        <div id="clock-icon"><i class="fa-solid fa-clock"></i>Clock</div>
-        <div id="todo-icon"><i class="fa-solid fa-clipboard-list"></i>TODO</div>
-        <div id="pomodoro-icon"><i class="fa-solid fa-hourglass-end"></i>Pomodoro</div>
+        <div id="clock-icon"><i class="fa-solid fa-clock"></i><label>Clock</label></div>
+        <div id="todo-icon"><i class="fa-solid fa-clipboard-list"></i><label>TODO</label></div>
+        <div id="pomodoro-icon"><i class="fa-solid fa-hourglass-end"></i><label>Pomodoro</label></div>
     </div>
+
+    <!--Weather Widget-->
+    <div class="weather">
+        <div class="weather-container">
+            <h1>Weather</h1>
+
+            <div class="weather-title" id="weatherTitle">
+                City
+            </div>
+
+            <div class="weather-condition">
+                <img id="weatherIcon" src="" alt="">
+
+                <div class="temp" id="temperature">
+                    00°C
+                </div>
+
+                <div class="condition" id="condition">
+                    Condition
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--Music Player -->
     <div class="audio-player">
-    
+
         <div class="audio-container">
-                <h1>Music Player</h1>
+            <h1>Music Player</h1>
             <div class="audio-title" id="songTitle">
                 No song loaded
             </div>
@@ -47,12 +79,14 @@
             </div>
 
             <div class="audio-playlist" id="playlist"></div>
-
-            <script src="assets/scripts/music_player.js"></script>
-            <script src="Clock/clock.js"></script>
-            <script src="Pomodoro/pomodoro.js"></script>
-            <script src="TODO/todo.js"></script>
-            <script src="assets/scripts/main.js"></script>
+        </div>
+        <!--Scripts-->
+        <script src="assets/scripts/weather.js"></script>
+        <script src="assets/scripts/music_player.js"></script>
+        <script src="Clock/clock.js"></script>
+        <script src="Pomodoro/pomodoro.js"></script>
+        <script src="TODO/todo.js"></script>
+        <script src="assets/scripts/main.js"></script>
 
 </body>
 
