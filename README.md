@@ -1,5 +1,5 @@
 ## Student Helper
-It was meant to beacome a student helper but it had became a set of web tools that you can use for free .
+It was meant to become a student helper but it had became a set of web tools that you can use for free .
 
 ## Features 
 - BTW I think all the tools are available on internet so does it and it is absolutely free
@@ -16,7 +16,7 @@ Just kidding you just need a link since you are lazy I have pasted it here
 OR IF you are very genius then try alternative path
 
 - Clone the repo
-- open the index.html file in your browser ( don't tell me you don't have a browser.
+- open the index.html file in your browser ( don't tell me you don't have a browser)
 
 ## Final message 
-FOLLOW ME ON GITHUB FOR THESE KINDS OF STUPID PROJECTS AND START IT IF IT SAVED YOUR 1 sec of you LIFE (look who am I talking to , you don't have a life )
+FOLLOW ME ON GITHUB FOR THESE KINDS OF STUPID PROJECTS AND STAR IT IF IT SAVED YOUR 1 sec of your LIFE (look who am I talking to , you don't have a life )
