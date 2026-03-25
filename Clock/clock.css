@@ -3,10 +3,14 @@
   top: 100px;
   left: 100px;
 
-  width: 300px;
+  width: clamp(260px, 80vw, 300px); 
+  max-width: 90vw;
+
   background: var(--surface);
   border: var(--border);
   box-shadow: 6px 6px 0 #000;
+
+  overflow: hidden;
 }
 
 .window-header {
@@ -15,17 +19,18 @@
   padding: 10px;
   cursor: grab;
   border-bottom: var(--border);
+
+  font-size: clamp(12px, 2vw, 14px);
 }
 
 .window-body {
-  padding: 20px;
+  padding: clamp(12px, 3vw, 20px);
 }
-
 
 .card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: clamp(12px, 3vw, 20px);
 }
 
 .brand {
@@ -33,16 +38,18 @@
   gap: 10px;
   border: var(--border);
   padding: 10px;
+  flex-wrap: wrap; 
 }
 
 .logo {
   border: var(--border);
   padding: 10px;
   font-weight: bold;
+  flex-shrink: 0;
 }
 
 .subtitle {
-  font-size: 12px;
+  font-size: clamp(10px, 2vw, 12px);
   color: var(--muted);
 }
 
@@ -57,6 +64,8 @@
   padding: 10px;
   cursor: pointer;
   border-right: var(--border);
+
+  font-size: clamp(10px, 2vw, 14px);
 }
 
 .toggle-button div:last-child {
@@ -72,23 +81,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: clamp(6px, 2vw, 10px);
+
+  flex-wrap: wrap;
 }
 
 .time {
-  font-size: 40px;
+  font-size: clamp(28px, 8vw, 40px);
   font-weight: bold;
 }
 
 .abbreviations {
   border: var(--border);
   padding: 5px;
+
+  font-size: clamp(10px, 2vw, 12px);
 }
 
 .info {
   text-align: center;
+  font-size: clamp(12px, 2vw, 14px);
 }
 
 .day {
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+  .clock-window {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+  }
+
 }
