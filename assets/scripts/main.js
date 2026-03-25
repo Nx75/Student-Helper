@@ -68,3 +68,26 @@ pomodoro.addEventListener("click", async () => {
     makeDraggable(pomodoro_windowEl);
     initPomodoro(pomodoro_windowEl);
 }); 
+
+const notes = document.getElementById("notes-icon");
+let notesTemplateCache = null;
+
+notes.addEventListener("click", async () => {
+    if (!notesTemplateCache) {
+        const notes_response = await fetch("notes/notes.html");
+        const notes_html = await notes_response.text();
+
+        const notes_temp = document.createElement("div");
+        notes_temp.innerHTML = notes_html;
+
+        notesTemplateCache = notes_temp.querySelector("#notes-template");
+    }
+
+    const notes_clone = notesTemplateCache.content.cloneNode(true);
+    const notes_windowEl = notes_clone.querySelector("#desktop-window");
+
+    desktop.appendChild(notes_windowEl);
+
+    makeDraggable(notes_windowEl);
+    initNotes(notes_windowEl);
+});
