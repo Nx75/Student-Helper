@@ -18,5 +18,9 @@ OR IF you are very genius then try alternative path
 - Clone the repo
 - open the index.html file in your browser ( don't tell me you don't have a browser)
 
+## Desktop OR UI of the Application / Website Whatever
+<img width="1918" height="1031" alt="Screenshot 2026-03-26 053050" src="https://github.com/user-attachments/assets/3d50c64f-57e7-4931-8183-2d27d1802244" />
+
+
 ## Final message 
 FOLLOW ME ON GITHUB FOR THESE KINDS OF STUPID PROJECTS AND STAR IT IF IT SAVED YOUR 1 sec of your LIFE (look who am I talking to , you don't have a life )
