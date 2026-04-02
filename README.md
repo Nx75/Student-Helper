@@ -1,3 +1,5 @@
+## NOTICE FOR REVIEWER 
+Since I saw that some of the hours I listed on the HCTG were double dipped ( I selected and shipped directly without looking since i was just transfering from the Jackpot so to reject my project I have unpublished site ) :sorry: 
 ## Student Helper
 It was meant to become a student helper but it had became a set of web tools that you can use for free .
 
