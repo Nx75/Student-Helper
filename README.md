@@ -1,6 +1,3 @@
-## NOTICE FOR REVIEWER 
-Since I saw that some of the hours I listed on the HCTG were double dipped ( I selected and shipped directly without looking since i was just transfering from the Jackpot so to reject my project I have unpublished site ) :sorry: , I don't want any sort of double dipping unlike jackpot it doesn't filter out so i selected 2 of my project which are not part of the site and one was already submitted to another program LOL.SO I kindly request you to reject my project .
-
 ## Student Helper
 It was meant to become a student helper but it had became a set of web tools that you can use for free .
 
